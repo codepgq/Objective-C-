@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lNj-jP-tgz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="zgo-n1-ymy">
+            <objects>
+                <viewController id="YXb-JV-bX3" customClass="MainController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9YN-ix-Uqt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Ub-b1-083">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4f-Tz-ucd">
+                                        <rect key="frame" x="96" y="0.0" width="183" height="120.5"/>
+                                        <state key="normal" title="tableview dataSource 抽离"/>
+                                        <connections>
+                                            <action selector="dataSourceBtnClick:" destination="YXb-JV-bX3" eventType="touchUpInside" id="yL8-9N-6G2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y02-gN-MIa">
+                                        <rect key="frame" x="105" y="120.5" width="165" height="120.5"/>
+                                        <state key="normal" title="业务逻辑移动到Model中"/>
+                                        <connections>
+                                            <action selector="LogicBtnClick:" destination="YXb-JV-bX3" eventType="touchUpInside" id="6VD-WO-3Gw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKa-xd-ATh">
+                                        <rect key="frame" x="146" y="241" width="83" height="121"/>
+                                        <state key="normal" title="创建Store类"/>
+                                        <connections>
+                                            <action selector="storeBtnClick:" destination="YXb-JV-bX3" eventType="touchUpInside" id="J5p-Mg-FG3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bru-ap-Kjv">
+                                        <rect key="frame" x="105" y="362" width="165" height="120.5"/>
+                                        <state key="normal" title="网络请求移动到model中"/>
+                                        <connections>
+                                            <action selector="networkBtnClick:" destination="YXb-JV-bX3" eventType="touchUpInside" id="N8c-XM-tjB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rul-eb-8ZY">
+                                        <rect key="frame" x="108.5" y="482.5" width="158" height="120.5"/>
+                                        <state key="normal" title="View代码移动到View层"/>
+                                        <connections>
+                                            <action selector="viewBtnClick:" destination="YXb-JV-bX3" eventType="touchUpInside" id="y5I-VV-oa3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ILH-bG-8EE" firstAttribute="trailing" secondItem="0Ub-b1-083" secondAttribute="trailing" id="Upi-oy-woh"/>
+                            <constraint firstItem="0Ub-b1-083" firstAttribute="leading" secondItem="ILH-bG-8EE" secondAttribute="leading" id="aur-Sc-Zx3"/>
+                            <constraint firstItem="ILH-bG-8EE" firstAttribute="bottom" secondItem="0Ub-b1-083" secondAttribute="bottom" id="g7f-ct-6CH"/>
+                            <constraint firstItem="0Ub-b1-083" firstAttribute="top" secondItem="ILH-bG-8EE" secondAttribute="top" id="oGT-iH-m51"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ILH-bG-8EE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2He-HP-oU4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRk-OE-I1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="500" y="-188.45577211394306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="shl-RS-J4C">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lNj-jP-tgz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OTw-U1-iAV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YXb-JV-bX3" kind="relationship" relationship="rootViewController" id="MBD-KI-YWf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvk-A1-g4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217" y="-188"/>
+        </scene>
+    </scenes>
+</document>
