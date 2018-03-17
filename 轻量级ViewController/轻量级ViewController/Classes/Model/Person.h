@@ -10,5 +10,10 @@
 
 @interface Person : NSObject
 @property (nonatomic, strong) NSString *title;
+@property (nonatomic, assign) NSInteger age;
+
+- (NSString *)formatterTitle;
+
++ (NSArray<Person*>*)loadForPlist;
 
 @end

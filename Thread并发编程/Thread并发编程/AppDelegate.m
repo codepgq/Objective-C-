@@ -1,28 +1,22 @@
 //
 //  AppDelegate.m
-//  轻量级ViewController
+//  Thread并发编程
 //
-//  Created by pgq on 2018/3/10.
+//  Created by pgq on 2018/3/17.
 //  Copyright © 2018年 pgq. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "Jack.h"
-
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    Jack *p = [[Jack alloc] init];
-    NSMutableString *mStr = [NSMutableString stringWithFormat:@"jack"];
-    p.name = mStr;
-    [mStr appendString:@"111"];
-    NSLog(@"%@ %@",p.name,mStr);
-    
+    // Override point for customization after application launch.
     return YES;
 }
 

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F9A9026205B54EA00E3D5F6 /* Jack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A9025205B54EA00E3D5F6 /* Jack.m */; };
+		8F9A9028205B927600E3D5F6 /* Person.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F9A9027205B927600E3D5F6 /* Person.plist */; };
+		8F9A902B205B9C2200E3D5F6 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A902A205B9C2200E3D5F6 /* Network.m */; };
+		8F9A902E205B9E8C00E3D5F6 /* UserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A902D205B9E8C00E3D5F6 /* UserHeaderView.m */; };
+		8F9A9030205BA30D00E3D5F6 /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F9A902F205BA30D00E3D5F6 /* 4.jpeg */; };
 		8FCAE6CD20535D7C0004BE33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCAE6CC20535D7C0004BE33 /* AppDelegate.m */; };
 		8FCAE6D520535D7C0004BE33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FCAE6D420535D7C0004BE33 /* Assets.xcassets */; };
 		8FCAE6D820535D7C0004BE33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FCAE6D620535D7C0004BE33 /* LaunchScreen.storyboard */; };
@@ -23,6 +28,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F9A9024205B54EA00E3D5F6 /* Jack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jack.h; sourceTree = "<group>"; };
+		8F9A9025205B54EA00E3D5F6 /* Jack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Jack.m; sourceTree = "<group>"; };
+		8F9A9027205B927600E3D5F6 /* Person.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Person.plist; sourceTree = "<group>"; };
+		8F9A9029205B9C2200E3D5F6 /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		8F9A902A205B9C2200E3D5F6 /* Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		8F9A902C205B9E8C00E3D5F6 /* UserHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserHeaderView.h; sourceTree = "<group>"; };
+		8F9A902D205B9E8C00E3D5F6 /* UserHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserHeaderView.m; sourceTree = "<group>"; };
+		8F9A902F205BA30D00E3D5F6 /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
 		8FCAE6C820535D7C0004BE33 /* 轻量级ViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "轻量级ViewController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FCAE6CB20535D7C0004BE33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8FCAE6CC20535D7C0004BE33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +95,8 @@
 				8FCAE6E120535DBE0004BE33 /* Classes */,
 				8FCAE6CB20535D7C0004BE33 /* AppDelegate.h */,
 				8FCAE6CC20535D7C0004BE33 /* AppDelegate.m */,
+				8F9A9024205B54EA00E3D5F6 /* Jack.h */,
+				8F9A9025205B54EA00E3D5F6 /* Jack.m */,
 				8FCAE6D420535D7C0004BE33 /* Assets.xcassets */,
 				8FCAE6D620535D7C0004BE33 /* LaunchScreen.storyboard */,
 				8FCAE6D920535D7C0004BE33 /* Info.plist */,
@@ -130,10 +145,16 @@
 		8FCAE6E420535DF10004BE33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8F9A902F205BA30D00E3D5F6 /* 4.jpeg */,
 				8FCAE6E820535EB20004BE33 /* TBDataSource.h */,
 				8FCAE6E920535EB20004BE33 /* TBDataSource.m */,
 				8FCAE6EB2053754D0004BE33 /* Person.h */,
 				8FCAE6EC2053754D0004BE33 /* Person.m */,
+				8F9A9027205B927600E3D5F6 /* Person.plist */,
+				8F9A9029205B9C2200E3D5F6 /* Network.h */,
+				8F9A902A205B9C2200E3D5F6 /* Network.m */,
+				8F9A902C205B9E8C00E3D5F6 /* UserHeaderView.h */,
+				8F9A902D205B9E8C00E3D5F6 /* UserHeaderView.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,7 +217,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F9A9030205BA30D00E3D5F6 /* 4.jpeg in Resources */,
 				8FCAE6EF205375F60004BE33 /* Main.storyboard in Resources */,
+				8F9A9028205B927600E3D5F6 /* Person.plist in Resources */,
 				8FCAE6D820535D7C0004BE33 /* LaunchScreen.storyboard in Resources */,
 				8FCAE6D520535D7C0004BE33 /* Assets.xcassets in Resources */,
 			);
@@ -211,6 +234,8 @@
 			files = (
 				8FCAE6E720535E6A0004BE33 /* TBViewController.m in Sources */,
 				8FCAE6DB20535D7C0004BE33 /* main.m in Sources */,
+				8F9A902E205B9E8C00E3D5F6 /* UserHeaderView.m in Sources */,
+				8F9A9026205B54EA00E3D5F6 /* Jack.m in Sources */,
 				8FCAE6FE20537A430004BE33 /* ViewCodeViewController.m in Sources */,
 				8FCAE6F5205379E40004BE33 /* LogicViewController.m in Sources */,
 				8FCAE6F820537A0C0004BE33 /* NetworkViewController.m in Sources */,
@@ -218,6 +243,7 @@
 				8FCAE6FB20537A270004BE33 /* StoreViewController.m in Sources */,
 				8FCAE6EA20535EB20004BE33 /* TBDataSource.m in Sources */,
 				8FCAE6F2205378CA0004BE33 /* MainController.m in Sources */,
+				8F9A902B205B9C2200E3D5F6 /* Network.m in Sources */,
 				8FCAE6CD20535D7C0004BE33 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

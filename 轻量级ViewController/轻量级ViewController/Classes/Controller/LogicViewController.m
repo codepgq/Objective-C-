@@ -6,8 +6,13 @@
 //  Copyright © 2018年 pgq. All rights reserved.
 //
 
-#import "LogicViewController.h"
+/*
+ 需求
+    把Person的title首字母大写，并且加上日期,输出到控制台
+ */
 
+#import "LogicViewController.h"
+#import "Person.h"
 @interface LogicViewController ()
 
 @end
@@ -16,6 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    Person *p = [[Person alloc] init];
+    p.title = @"xiaoming";
+    NSLog(@"%@",[p formatterTitle]);
 }
 @end
